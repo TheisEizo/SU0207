@@ -1,0 +1,7 @@
+C:\Users\admin\Desktop\Løsninger\Opgave1\Opgave1\bin\Debug\Opgave1.exe.config
+C:\Users\admin\Desktop\Løsninger\Opgave1\Opgave1\bin\Debug\Opgave1.exe
+C:\Users\admin\Desktop\Løsninger\Opgave1\Opgave1\bin\Debug\Opgave1.pdb
+C:\Users\admin\Desktop\Løsninger\Opgave1\Opgave1\obj\Debug\Opgave1.csprojAssemblyReference.cache
+C:\Users\admin\Desktop\Løsninger\Opgave1\Opgave1\obj\Debug\Opgave1.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\Løsninger\Opgave1\Opgave1\obj\Debug\Opgave1.exe
+C:\Users\admin\Desktop\Løsninger\Opgave1\Opgave1\obj\Debug\Opgave1.pdb
