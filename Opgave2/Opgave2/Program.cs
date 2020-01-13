@@ -12,6 +12,7 @@ namespace ConsoleApp1
         {
             string inputText;
 
+            //Setup int with input from console
             var int1 = 0;
             Console.Write("Skriv int: ");
             try {
@@ -21,18 +22,21 @@ namespace ConsoleApp1
             catch (FormatException) { Console.WriteLine("Hey! Default = 0"); }
             finally { Console.WriteLine($"Tallet er {int1}\n"); }
 
+            //Setup int with input from console
             var float2 = 0F;
             Console.Write("Skriv float: ");
             try {
                 inputText = Console.ReadLine();
-                inputText = inputText.Replace(".", ",");
+                inputText = inputText.Replace(".", ","); //Convert "," to "." for proper use
                 float2 = float.Parse(inputText);
             }
             catch (FormatException) { Console.WriteLine("Hey! Default = 0"); }
             finally { Console.WriteLine($"Tallet er {float2}\n"); }
 
+            //Add the two
             Console.WriteLine($"Summen er: {int1 + float2}");
 
+            //To keep outputs on screen, wait for input
             Console.ReadKey();
         }
     }
