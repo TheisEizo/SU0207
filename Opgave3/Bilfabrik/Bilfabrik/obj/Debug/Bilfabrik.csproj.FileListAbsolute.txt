@@ -1,0 +1,15 @@
+C:\Users\admin\Desktop\Git\SU0207\Opgave3\Bilfabrik\Bilfabrik\bin\Debug\Bilfabrik.exe.config
+C:\Users\admin\Desktop\Git\SU0207\Opgave3\Bilfabrik\Bilfabrik\bin\Debug\Bilfabrik.exe
+C:\Users\admin\Desktop\Git\SU0207\Opgave3\Bilfabrik\Bilfabrik\bin\Debug\Bilfabrik.pdb
+C:\Users\admin\Desktop\Git\SU0207\Opgave3\Bilfabrik\Bilfabrik\obj\Debug\Bilfabrik.csprojAssemblyReference.cache
+C:\Users\admin\Desktop\Git\SU0207\Opgave3\Bilfabrik\Bilfabrik\obj\Debug\MainWindow.g.cs
+C:\Users\admin\Desktop\Git\SU0207\Opgave3\Bilfabrik\Bilfabrik\obj\Debug\App.g.cs
+C:\Users\admin\Desktop\Git\SU0207\Opgave3\Bilfabrik\Bilfabrik\obj\Debug\Bilfabrik_MarkupCompile.cache
+C:\Users\admin\Desktop\Git\SU0207\Opgave3\Bilfabrik\Bilfabrik\obj\Debug\Bilfabrik_MarkupCompile.lref
+C:\Users\admin\Desktop\Git\SU0207\Opgave3\Bilfabrik\Bilfabrik\obj\Debug\MainWindow.baml
+C:\Users\admin\Desktop\Git\SU0207\Opgave3\Bilfabrik\Bilfabrik\obj\Debug\Bilfabrik.g.resources
+C:\Users\admin\Desktop\Git\SU0207\Opgave3\Bilfabrik\Bilfabrik\obj\Debug\Bilfabrik.Properties.Resources.resources
+C:\Users\admin\Desktop\Git\SU0207\Opgave3\Bilfabrik\Bilfabrik\obj\Debug\Bilfabrik.csproj.GenerateResource.cache
+C:\Users\admin\Desktop\Git\SU0207\Opgave3\Bilfabrik\Bilfabrik\obj\Debug\Bilfabrik.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\Git\SU0207\Opgave3\Bilfabrik\Bilfabrik\obj\Debug\Bilfabrik.exe
+C:\Users\admin\Desktop\Git\SU0207\Opgave3\Bilfabrik\Bilfabrik\obj\Debug\Bilfabrik.pdb
