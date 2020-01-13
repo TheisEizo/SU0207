@@ -27,7 +27,7 @@ namespace Bilfabrik
 
         private void bntClose_Click(object sender, RoutedEventArgs e)
         {
-
+            this.Close();
         }
     }
 }
