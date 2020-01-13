@@ -10,7 +10,9 @@ namespace Opgave1
     {
         static void Main(string[] args)
         {
+            //Setup with var name = value;
             string tekst = "Hej Verden";
+            /* Use Console.SomeThing */
             Console.WriteLine(tekst);
             Console.ReadKey();
         }

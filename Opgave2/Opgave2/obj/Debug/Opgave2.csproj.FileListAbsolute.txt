@@ -1,0 +1,14 @@
+C:\Users\admin\Desktop\Løsninger\Opgave2\Opgave2\Opgave2\bin\Debug\Opgave2.exe.config
+C:\Users\admin\Desktop\Løsninger\Opgave2\Opgave2\Opgave2\bin\Debug\Opgave2.exe
+C:\Users\admin\Desktop\Løsninger\Opgave2\Opgave2\Opgave2\bin\Debug\Opgave2.pdb
+C:\Users\admin\Desktop\Løsninger\Opgave2\Opgave2\Opgave2\obj\Debug\Opgave2.csprojAssemblyReference.cache
+C:\Users\admin\Desktop\Løsninger\Opgave2\Opgave2\Opgave2\obj\Debug\Opgave2.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\Løsninger\Opgave2\Opgave2\Opgave2\obj\Debug\Opgave2.exe
+C:\Users\admin\Desktop\Løsninger\Opgave2\Opgave2\Opgave2\obj\Debug\Opgave2.pdb
+C:\Users\admin\Desktop\Løsninger\Opgave2\Opgave2\bin\Debug\Opgave2.exe.config
+C:\Users\admin\Desktop\Løsninger\Opgave2\Opgave2\bin\Debug\Opgave2.exe
+C:\Users\admin\Desktop\Løsninger\Opgave2\Opgave2\bin\Debug\Opgave2.pdb
+C:\Users\admin\Desktop\Løsninger\Opgave2\Opgave2\obj\Debug\Opgave2.csprojAssemblyReference.cache
+C:\Users\admin\Desktop\Løsninger\Opgave2\Opgave2\obj\Debug\Opgave2.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\Løsninger\Opgave2\Opgave2\obj\Debug\Opgave2.exe
+C:\Users\admin\Desktop\Løsninger\Opgave2\Opgave2\obj\Debug\Opgave2.pdb
