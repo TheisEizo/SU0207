@@ -41,7 +41,7 @@ namespace Bilfabrik
                 { errorMessages += "Antal hjul er ikke et tal \n"; }
 
             //Check if errorMesages, if send them to Messagebox, else add order to lst-box-queue
-            if (errorMessages == "")
+            if (String.IsNullOrEmpty(errorMessages))
                 { lstbQueue.Items.Add($"{txtbColour.Text} {txtbBrand.Text} {txtbType.Text} med {seats} sæder og {wheels} hjul"); }
             else
                 { MessageBox.Show(errorMessages, "Fejlmeddelse"); }
