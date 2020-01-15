@@ -1,0 +1,116 @@
+﻿<Window x:Class="Bilfabrik.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bilfabrik"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid Margin="10">
+        <!-- Ydre Grid - Styrer hele vinduet-->
+        <!-- Opdelt i 3 rækker og 2 kolonner -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Overskrift - på tværs af kolonnerne i første række -->
+        <Label Grid.Row="0" Grid.ColumnSpan="2" Content="Bilfabrikskontrolsystem" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center"/>
+
+        <!-- Grid, der indeholder bestillingsfelterne -->
+        <Grid Grid.Row="1" Grid.Column="0" Margin="5,0,5,5">
+            <!-- Grid er opdelt i 6 rækker - 5 til indtastningsfelter, 1 til bestillingsknappen -->
+            <!-- Grid er opdelt i 2 kolonner - 1. til ledetekster, 2. til indtasningsfelter -->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Bilmærke -->
+            <TextBlock Grid.Row="0" Grid.Column="0" Text="Mærke"/>
+            <TextBox Grid.Row="0" Grid.Column="1" x:Name="tbCarBrand"/>
+
+            <!-- Antal sæder -->
+            <TextBlock  Grid.Row="1" Grid.Column="0" Text="Antal sæder"/>
+            <TextBox  Grid.Row="1" Grid.Column="1" x:Name="tbNumberOfSeats"/>
+
+            <!-- Antal hjul -->
+            <TextBlock  Grid.Row="2" Grid.Column="0" Text="Antal hjul" />
+            <TextBox Grid.Row="2" Grid.Column="1" x:Name="tbNumberOfWheels"/>
+
+            <!-- Farve-->
+            <TextBlock Grid.Row="3" Grid.Column="0" Text="Farve"/>
+            <ComboBox Grid.Row="3" Grid.Column="1" x:Name="cbColor"/>
+
+            <!-- Type -->
+            <TextBlock Grid.Row="4" Grid.Column="0" Text="Type" />
+            <ComboBox Grid.Row="4" Grid.Column="1" x:Name="cbType">
+                <ComboBoxItem Content="Personal" IsSelected="True"/>
+                <ComboBoxItem Content="SUV"/>
+                <ComboBoxItem Content="Van"/>
+                <ComboBoxItem Content="Truck"/>
+                <ComboBoxItem Content="Bus" />
+            </ComboBox>
+
+            <!-- StyringsType -->
+            <TextBlock Grid.Row="5" Grid.Column="0" Text="Styring" />
+            <ComboBox Grid.Row="5" Grid.Column="1" x:Name="cbSteering"/>
+
+            <!-- Bestillingsknap -->
+            <Button  Grid.Row="6" Grid.ColumnSpan="2" x:Name="btnOrder" Content="Bestil" Margin="0,5,0,0" Click="btnOrder_Click" IsDefault="True"/>
+        </Grid>
+
+        <!-- Lukke knap - i 3. række (dvs. nederst) i 1. kolonne -->
+        <Button Grid.Row="2" Content="Afslut" x:Name="btnClose" Click="btnClose_Click"/>
+
+        <!-- Bestillingslisten - i 2. række, 2. kolonne -->
+        <Grid Grid.Row="1" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Text="Fabriks kø" HorizontalAlignment="Left" Width="auto"/>
+            <Button Grid.Row="0" x:Name="btnSort" Content="Sort" HorizontalAlignment="Right" Width="auto" Click="btnSort_Click"/>
+            <ListBox Grid.Row="1" x:Name="lstOrders" SelectionChanged="lstOrders_SelectionChanged"/>
+
+            <!-- Knapper til at afprøve styringen -->
+            <Border Grid.Row="2" BorderBrush="Green" BorderThickness="2" Margin="5">
+                <Grid MinHeight="50">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0" Grid.ColumnSpan="3" Text="Afprøv bilens styring"/>
+                    <Button Grid.Row="1" Grid.Column="0" Content="&lt;&lt;&lt;" x:Name="btnSteerLeft" Click="btnSteerLeft_Click" IsEnabled="False"/>
+                    <Button Grid.Row="1" Grid.Column="1" Content="DYT" x:Name="btnGiveSound" Click="btnGiveSound_Click" IsEnabled="False"/>
+                    <Button Grid.Row="1" Grid.Column="2" Content="&gt;&gt;&gt;" x:Name="btnSteerRight" Click="btnSteerRight_Click" IsEnabled="False"/>
+                    <TextBlock Grid.Row="2" Grid.ColumnSpan="3" Text="(Styring)" x:Name="tbSteeringResult"/>
+                </Grid>
+            </Border>
+        </Grid>
+
+        <!-- Bare for at vise, hvilket modul koden kommer fra :-) -->
+        <TextBlock Grid.Row="2" Grid.Column="1" Text="Modul 7 - Start" VerticalAlignment="Bottom" HorizontalAlignment="Right" FontSize="10"/>
+    </Grid>
+</Window>
