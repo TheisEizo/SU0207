@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Bilfabrik.Model.Steering
 {
-    class Joystick
+    class Joystick : ISteering
     {
         public string MoveRight(int degrees)
         {
@@ -18,7 +18,7 @@ namespace Bilfabrik.Model.Steering
         {
             return string.Format("The joystick is held left by {0} degrees",  degrees);
         }
-
+        
         public string MoveForward(int degrees)
         {
             return string.Format("The joystick is held forward by {0} degrees", degrees);
@@ -32,7 +32,6 @@ namespace Bilfabrik.Model.Steering
         public string PressButton(int buttonNumberToPress)
         {
             return string.Format("Button {0} is pressed on the joystick", buttonNumberToPress);
-
         }
 
         public override string ToString()
@@ -40,5 +39,11 @@ namespace Bilfabrik.Model.Steering
             return "JoyStick";
         }
 
+        public string TurnRight(int degrees) 
+            => MoveRight(degrees);
+        public string TurnLeft(int degrees) 
+            => MoveLeft(degrees);
+        public string SoundTheHorn() 
+            => "The horn is sounding loud and clear";
     }
 }

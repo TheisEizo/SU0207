@@ -101,9 +101,9 @@ namespace Bilfabrik
 			// Hent instans af Car-klassen, uanset om der er fejl
 			var newCar = Car.CreateCar(type, brand, numberOfSeatsInt, numberOfWheelsInt, color, steeringType);
 
-            if (!newCar.WheelsIsAllowed(numberOfWheelsInt))
+            if (!newCar.WheelsIsAllowed(newCar.NumberOfWheels))
                 errorMessages += "Fejl: "+newCar.TextAboutWheels + "\n";
-            if (!newCar.SeatsIsAllowed(numberOfSeatsInt))
+            if (!newCar.SeatsIsAllowed(newCar.NumberOfSeats))
                 errorMessages += "Fejl: " + newCar.TextAboutSeats +"\n";
 
             // Alt er kontrolleret - er der sket nogle fejl?

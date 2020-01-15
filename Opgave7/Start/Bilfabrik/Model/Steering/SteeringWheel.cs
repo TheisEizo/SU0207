@@ -7,26 +7,18 @@ using System.Threading.Tasks;
 
 namespace Bilfabrik.Model.Steering
 {
-    class SteeringWheel
+    class SteeringWheel : ISteering
     {
         public string TurnRight(int degrees)
-        {
-            return string.Format("The SteeringWheel is turning right by {0} degrees", degrees);
-        }
+            => $"The SteeringWheel is turning right by {degrees} degrees";
 
         public string TurnLeft(int degrees)
-        {
-            return string.Format("The SteeringWheel is turning left by {0} degrees", degrees);
-        }
+            => $"The SteeringWheell is turning left by {degrees} degrees";
 
         public string SoundTheHorn()
-        {
-            return "The horn is sounding loud and clear";
-        }
+            => "The horn is sounding loud and clear";
 
         public override string ToString()
-        {
-            return "SteeringWheel";
-        }
+            => "SteeringWheel";
     }
 }

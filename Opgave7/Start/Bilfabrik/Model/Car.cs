@@ -13,22 +13,24 @@ namespace Bilfabrik.Model
         {
             Car carToReturn = null;
 
-            SteeringWheel steering = null;
+             ISteering steering = null;
             // Hvilken styring skal bruges 
-            // - fra start er der kun rattet!
             switch (steeringType)
             {
                 case SteeringType.SteeringWheel:
                     steering = new SteeringWheel();
                     break;
-                default:
-                    steering = new SteeringWheel();
+                case SteeringType.Brain:
+                    steering = new Brain();
                     break;
+                case SteeringType.Joystick:
+                    steering = new Joystick();
+                    break;
+                default:
+                    throw new Exception("SteeringType ikke valgt korrekt");
             }
 
             // Hvilken biltype
-            // - Fra start har vi kun Car
-
             switch (type)
             {
                 case CarType.Personal:
@@ -44,23 +46,19 @@ namespace Bilfabrik.Model
                     carToReturn = new Truck(brand, numberOfSeats, numberOfWheels, color, steering);
                     break;
                 default:
-                    carToReturn = new Personal(brand, numberOfSeats, numberOfWheels, color, steering);
-                    break;
+                    throw new Exception("CarType ikke valgt korrekt");
             }
-
-            
 
             return carToReturn;
         }
 
-        public Car(string brand, int numberOfSeats, int numberOfWheels, ColorType color, CarType type, SteeringWheel steering)
+        public Car(string brand, int numberOfSeats, int numberOfWheels, ColorType color, CarType type, ISteering steering)
         {
             Brand = brand;
             NumberOfSeats = numberOfSeats;
             NumberOfWheels = numberOfWheels;
             Color = color;
             Type = type;
-
             Steering = steering;
         }
 
@@ -70,13 +68,10 @@ namespace Bilfabrik.Model
         public ColorType Color { get; set; }
         public CarType Type { get; set; }
 
-        public SteeringWheel Steering { get; set; }
+        public ISteering Steering { get; set; }
 
         public override string ToString()
-        {
-            var text = string.Format("{0} {1} {2}, styret af {3}, med {4} sæder og {5} hjul.", Color, Brand, Type, Steering, NumberOfSeats, NumberOfWheels);
-            return text;
-        }
+            => $"{Color} {Brand} {Type}, styret af {Steering}, med {NumberOfSeats} sæder og {NumberOfWheels} hjul.";
 
         public abstract bool WheelsIsAllowed(int numberOfWheels);
 
@@ -85,7 +80,5 @@ namespace Bilfabrik.Model
         public abstract bool SeatsIsAllowed(int numberOfSeats);
 
         public abstract string TextAboutSeats { get; }
-            
-
     }
 }

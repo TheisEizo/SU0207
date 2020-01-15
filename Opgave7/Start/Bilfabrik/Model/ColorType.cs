@@ -2,6 +2,9 @@
 {
     enum ColorType
     {
-        Red, Green, Black, Yellow
+        Red,
+        Green,
+        Black,
+        Yellow
     }
 }

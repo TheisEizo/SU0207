@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Bilfabrik.Model.Steering
 {
-    class Brain
+    class Brain : ISteering
     {
         public int Capacity { get; set; }
         public int IQ { get; set; }
@@ -28,11 +28,16 @@ namespace Bilfabrik.Model.Steering
         {
             return string.Format("The Brain is thinking about Jumping {0} times.", numberOfJumbs);
         }
-
         public override string ToString()
         {
             return "Brain";
         }
 
+        public string TurnRight(int degrees) 
+            => ThinkOnGoingRight(degrees);
+        public string TurnLeft(int degrees) 
+            =>  ThinkOnGoingRight(degrees);
+        public string SoundTheHorn() 
+            => "The horn is sounding loud and clear";
     }
 }

@@ -74,6 +74,7 @@
   <ItemGroup>
     <Compile Include="Model\Personal.cs" />
     <Compile Include="Model\Steering\Brain.cs" />
+    <Compile Include="Model\Steering\ISteering.cs" />
     <Compile Include="Model\Steering\Joystick.cs" />
     <Compile Include="Model\Steering\SteeringType.cs" />
     <Compile Include="Model\Steering\SteeringWheel.cs" />
